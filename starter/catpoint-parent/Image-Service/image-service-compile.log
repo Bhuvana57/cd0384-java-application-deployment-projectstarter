@@ -1,0 +1,45 @@
+[WARNING] Unable to find the root directory. Create a .mvn directory in the root directory or add the root="true" attribute on the root project's model to identify it.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.udacity.catpoint:Image-Service >-----------------
+[INFO] Building Image-Service 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 21870 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots-c1d4c55f9308e5ac18a4069bed41dca64d85c515.txt)
+[WARNING] Could not transfer metadata /.meta/prefixes.txt from/to plexus.snapshots-9dedea94451709299d055319c137abeb30aacdef (https://oss.sonatype.org/content/repositories/plexus-snapshots): HTTP Status: 503
+[WARNING] Version not locked for default bindings plugins [maven-clean-plugin, maven-resources-plugin], you should define versions in pluginManagement section of your pom.xml or parent
+[INFO] 
+[INFO] --- clean:3.4.0:clean (default-clean) @ Image-Service ---
+[INFO] Deleting /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Image-Service/target
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (prepare-agent) @ Image-Service ---
+[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar=destfile=/workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Image-Service/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Image-Service ---
+[INFO] skip non existing resourceDirectory /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Image-Service/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ Image-Service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Image-Service/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Image-Service/src/main/java/module-info.java:[6,36] module not found: software.amazon.awssdk.rekognition
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.311 s
+[INFO] Finished at: 2026-01-06T13:19:42Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile) on project Image-Service: Compilation failure
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Image-Service/src/main/java/module-info.java:[6,36] module not found: software.amazon.awssdk.rekognition
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the '-e' switch
+[ERROR] Re-run Maven using the '-X' switch to enable verbose output
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/CompilationFailureException

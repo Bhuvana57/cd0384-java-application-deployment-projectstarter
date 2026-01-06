@@ -1,0 +1,28 @@
+[WARNING] Unable to find the root directory. Create a .mvn directory in the root directory or add the root="true" attribute on the root project's model to identify it.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.udacity.catpoint:Security-Service >----------------
+[INFO] Building Security-Service 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 21870 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots-c1d4c55f9308e5ac18a4069bed41dca64d85c515.txt)
+[WARNING] Could not transfer metadata /.meta/prefixes.txt from/to plexus.snapshots-9dedea94451709299d055319c137abeb30aacdef (https://oss.sonatype.org/content/repositories/plexus-snapshots): HTTP Status: 503
+[WARNING] Version not locked for default bindings plugins [maven-clean-plugin, maven-resources-plugin], you should define versions in pluginManagement section of your pom.xml or parent
+[WARNING] The POM for com.udacity.catpoint:Image-Service:jar:1.0-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.380 s
+[INFO] Finished at: 2026-01-06T13:06:55Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project Security-Service: Could not resolve dependencies for project com.udacity.catpoint:Security-Service:jar:1.0-SNAPSHOT
+[ERROR] dependency: com.udacity.catpoint:Image-Service:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	Prefix com/udacity/catpoint/Image-Service/1.0-SNAPSHOT/Image-Service-1.0-SNAPSHOT.jar NOT allowed from central (https://repo.maven.apache.org/maven2, default, releases): The following artifacts could not be resolved: com.udacity.catpoint:Image-Service:jar:1.0-SNAPSHOT (absent): Prefix com/udacity/catpoint/Image-Service/1.0-SNAPSHOT/Image-Service-1.0-SNAPSHOT.jar NOT allowed from central (https://repo.maven.apache.org/maven2, default, releases)
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the '-e' switch
+[ERROR] Re-run Maven using the '-X' switch to enable verbose output
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
