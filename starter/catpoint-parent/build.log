@@ -1,0 +1,148 @@
+Error: Apache Maven 4.x requires Java 17 or newer to run.
+openjdk version "11.0.14.1" 2022-02-08 LTS
+OpenJDK Runtime Environment Microsoft-31205 (build 11.0.14.1+1-LTS)
+OpenJDK 64-Bit Server VM Microsoft-31205 (build 11.0.14.1+1-LTS, mixed mode)
+Please upgrade your Java installation or set JAVA_HOME to point to a compatible JDK.
+cd /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent
+cat > PROJECT_CHECKLIST.md << 'EOF'
+# UdaSecurity Project Complete Checklist
+
+## Section 7.2: Update pom.xml
+- [ ] Add all missing Maven dependencies
+- [ ] Shared dependencies in parent pom
+- [ ] Unshared dependencies in child poms
+- [ ] Latest versions for core plugins (maven-compiler-plugin, etc.)
+- [ ] Project compiles without errors
+
+## Section 7.3: Splitting Up the Project  
+- [ ] Create Image-Service module
+- [ ] Create Security-Service module
+- [ ] Move Image Service code to Image-Service module
+- [ ] Move Security code to Security-Service module
+- [ ] Create module-info.java for each module with proper exports/requires
+- [ ] Handle transitive dependencies
+- [ ] Update module dependencies in poms
+
+## Section 7.4: Unit Tests
+- [ ] Write unit tests for SecurityService
+- [ ] Cover all 5 application requirements:
+  1. Alarm armed + sensor activated → pending alarm status
+  2. Alarm armed + sensor activated + pending → alarm status
+  3. Pending alarm + all sensors inactive → no alarm status
+  4. Alarm active + sensor state change (inactive→active) → no state change
+  5. Sensor activated + already active + pending → alarm status
+  6. Sensor deactivated + already inactive → no alarm state change
+  7. Image service returns cat + armed-home → alarm status
+  8. Image service returns no cat + sensors inactive → no alarm
+  9. System disarmed → no alarm
+  10. System armed → reset sensors to inactive
+  11. System armed-home + camera shows cat → alarm status
+
+## Section 7.5: Fixing Bugs
+- [ ] Identify and fix all bugs found through unit testing
+- [ ] All unit tests pass
+
+## Section 7.6: Unit Test Coverage  
+- [ ] Achieve minimum coverage requirements
+- [ ] Generate code coverage report with JaCoCo
+- [ ] Coverage report shows sufficient coverage
+
+## Section 7.7: JAR and Static Analysis
+- [ ] Configure maven-assembly-plugin or maven-jar-plugin
+- [ ] Build creates executable JAR file
+- [ ] Configure SpotBugs plugin
+- [] Run static code analysis
+- [ ] Address any critical issues found
+
+## Section 7.8: Project Rubric
+- [ ] All code compiles and runs
+- [ ] Project split into proper modules
+- [ ] All tests pass
+- [ ] Test coverage meets requirements
+- [ ] JAR file builds successfully
+- [ ] Static analysis configured
+- [ ] All bugs fixed
+
+## Section 7.9: Submit Project
+- [ ] Complete README with instructions
+- [ ] Include all required files
+- [ ] Push to GitHub or create zip file
+- [ ] Double-check rubric
+- [ ] Submit project
+EOF
+find . -name '*.java' -type f | head -20
+cat > COMPLETE_REQUIREMENTS_ANALYSIS.md << 'ENDFILE'
+# Complete UdaSecurity Project Requirements Analysis
+
+## SECTION 1: Update pom.xml with Missing Dependencies ✓ PARTIALLY DONE
+- [x] Project moved to Maven structure  
+- [x] Added dependencies to pom.xml
+- [x] Project compiles (after fixing Java version)
+- [ ] NEED TO CHECK: All dependencies properly configured
+- [ ] NEED TO CHECK: Versions specified correctly
+
+## SECTION 2: Split Image Service into Own Module ✓ ALREADY DONE
+- [x] Parent project created (catpoint-parent)
+- [x] Image-Service module created  
+- [x] Security-Service module created
+- [x] Components moved to proper modules
+- [ ] NEED TO CHECK: Dependencies in parent vs child poms
+- [ ] NEED TO CHECK: pluginManagement in parent pom with latest versions
+- [ ] NEED TO CHECK: module-info.java exists for each module
+- [ ] NEED TO CHECK: Correct export/requires statements
+- [ ] NEED TO CHECK: Transitive dependencies handled
+- [x] Project still runs
+
+## SECTION 3: Unit Tests - CRITICAL MISSING
+### 11 Application Requirements to Test:
+1. [ ] Alarm armed + sensor activated → pending alarm
+2. [ ] Alarm armed + sensor activated + pending → alarm 
+3. [ ] Pending alarm + all sensors inactive → no alarm
+4. [ ] Alarm active + sensor state change → no alarm state change
+5. [ ] Sensor activated while active + pending → alarm
+6. [ ] Sensor deactivated while inactive → no alarm state change
+7. [ ] Cat image + armed-home → alarm
+8. [ ] No cat image + sensors inactive → no alarm
+9. [ ] System disarmed → no alarm
+10. [ ] System armed → reset sensors inactive
+11. [ ] Armed-home + cat → alarm
+
+### Test Requirements:
+- [ ] Use JUnit 5
+- [ ] Use @Mock for dependencies
+- [ ] Use @ParameterizedTest
+- [ ] Use ArgumentMatchers  
+- [ ] Create ImageService interface
+- [ ] Tests in same package as SecurityService
+- [ ] Don't test Repository or ImageService directly
+
+## SECTION 4: Fix Bugs - DEPENDS ON SECTION 3
+- [ ] All unit tests pass
+- [ ] All 11 requirements properly implemented
+
+## SECTION 5: Unit Test Coverage - MISSING
+- [ ] Full coverage of SecurityService methods
+- [ ] All application requirement methods covered
+- [ ] Generate coverage report
+- [ ] Submit coverage screenshots
+
+## SECTION 6: Executable JAR - MISSING
+- [ ] Add maven plugin (assembly or jar)
+- [ ] Build creates executable JAR
+- [ ] JAR runs with: java -jar [jarname]
+- [ ] Submit screenshot: executable_jar.png
+
+## SECTION 7: Static Analysis - MISSING  
+- [ ] Add spotbugs-maven-plugin to pom
+- [ ] Generate spotbugs.html in target/site
+- [ ] Fix HIGH priority errors
+
+## SUBMISSION Requirements:
+- [ ] Complete README with instructions
+- [ ] All required files included
+- [ ] Push to GitHub OR zip file
+- [ ] Double-check rubric
+- [ ] Submit project
+ENDFILE
+git add -A && git commit -m "Add complete requirements analysis - All sections 7.1-7.9 documented" && git push
+cat pom.xml
