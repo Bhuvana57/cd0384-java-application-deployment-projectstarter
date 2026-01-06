@@ -1,0 +1,219 @@
+[WARNING] Unable to find the root directory. Create a .mvn directory in the root directory or add the root="true" attribute on the root project's model to identify it.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.udacity.catpoint:Security-Service >----------------
+[INFO] Building Security-Service 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 21870 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots-c1d4c55f9308e5ac18a4069bed41dca64d85c515.txt)
+[WARNING] Could not transfer metadata /.meta/prefixes.txt from/to plexus.snapshots-9dedea94451709299d055319c137abeb30aacdef (https://oss.sonatype.org/content/repositories/plexus-snapshots): HTTP Status: 503
+[WARNING] Version not locked for default bindings plugins [maven-clean-plugin, maven-resources-plugin, maven-jar-plugin, maven-install-plugin], you should define versions in pluginManagement section of your pom.xml or parent
+[INFO] 
+[INFO] --- clean:3.4.0:clean (default-clean) @ Security-Service ---
+[INFO] Deleting /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/target
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (prepare-agent) @ Security-Service ---
+[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar=destfile=/workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Security-Service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ Security-Service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/target/classes
+[INFO] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java: /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java uses unchecked or unsafe operations.
+[INFO] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/service/StyleService.java:[1,1] package exists in another module: com.udacity.catpoint.image
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/service/SecurityService.java:[1,1] package exists in another module: com.udacity.catpoint.image
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/DisplayPanel.java:[4,36] cannot find symbol
+  symbol:   class SecurityService
+  location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/DisplayPanel.java:[5,36] cannot find symbol
+  symbol:   class StyleService
+  location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/DisplayPanel.java:[6,22] package net.miginfocom.swing is not visible
+  (package net.miginfocom.swing is declared in the unnamed module, but module com.udacity.catpoint.security does not read it)
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/DisplayPanel.java:[18,25] cannot find symbol
+  symbol:   class SecurityService
+  location: class com.udacity.catpoint.application.DisplayPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[5,36] cannot find symbol
+  symbol:   class SecurityService
+  location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[6,36] cannot find symbol
+  symbol:   class StyleService
+  location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[7,22] package net.miginfocom.swing is not visible
+  (package net.miginfocom.swing is declared in the unnamed module, but module com.udacity.catpoint.security does not read it)
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[17,13] cannot find symbol
+  symbol:   class SecurityService
+  location: class com.udacity.catpoint.application.SensorPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[29,24] cannot find symbol
+  symbol:   class SecurityService
+  location: class com.udacity.catpoint.application.SensorPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/CatpointGui.java:[6,36] cannot find symbol
+  symbol:   class SecurityService
+  location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/CatpointGui.java:[7,22] package net.miginfocom.swing is not visible
+  (package net.miginfocom.swing is declared in the unnamed module, but module com.udacity.catpoint.security does not read it)
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/CatpointGui.java:[20,13] cannot find symbol
+  symbol:   class SecurityService
+  location: class com.udacity.catpoint.application.CatpointGui
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[4,36] cannot find symbol
+  symbol:   class SecurityService
+  location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[5,36] cannot find symbol
+  symbol:   class StyleService
+  location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[6,22] package net.miginfocom.swing is not visible
+  (package net.miginfocom.swing is declared in the unnamed module, but module com.udacity.catpoint.security does not read it)
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[4,36] cannot find symbol
+  symbol:   class SecurityService
+  location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[5,36] cannot find symbol
+  symbol:   class StyleService
+  location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[6,22] package net.miginfocom.swing is not visible
+  (package net.miginfocom.swing is declared in the unnamed module, but module com.udacity.catpoint.security does not read it)
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[19,13] cannot find symbol
+  symbol:   class SecurityService
+  location: class com.udacity.catpoint.application.ImagePanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[28,23] cannot find symbol
+  symbol:   class SecurityService
+  location: class com.udacity.catpoint.application.ImagePanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[18,13] cannot find symbol
+  symbol:   class SecurityService
+  location: class com.udacity.catpoint.application.ControlPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[22,25] cannot find symbol
+  symbol:   class SecurityService
+  location: class com.udacity.catpoint.application.ControlPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/service/SecurityService.java:[22,13] cannot find symbol
+  symbol:   class FakeImageService
+  location: class com.udacity.catpoint.security.service.SecurityService
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/service/SecurityService.java:[26,67] cannot find symbol
+  symbol:   class FakeImageService
+  location: class com.udacity.catpoint.security.service.SecurityService
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/module-info.java:[11,42] package is empty or does not exist: com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/module-info.java:[12,42] package is empty or does not exist: com.udacity.catpoint.security.application
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/module-info.java:[13,42] package is empty or does not exist: com.udacity.catpoint.security.data
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/DisplayPanel.java:[28,28] cannot find symbol
+  symbol:   variable StyleService
+  location: class com.udacity.catpoint.application.DisplayPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[34,28] cannot find symbol
+  symbol:   variable StyleService
+  location: class com.udacity.catpoint.application.SensorPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/CatpointGui.java:[20,51] cannot find symbol
+  symbol:   class SecurityService
+  location: class com.udacity.catpoint.application.CatpointGui
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[28,28] cannot find symbol
+  symbol:   variable StyleService
+  location: class com.udacity.catpoint.application.ControlPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[35,30] cannot find symbol
+  symbol:   variable StyleService
+  location: class com.udacity.catpoint.application.ImagePanel
+[INFO] 34 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.269 s
+[INFO] Finished at: 2026-01-06T14:46:09Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile) on project Security-Service: Compilation failure: Compilation failure: 
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/service/StyleService.java:[1,1] package exists in another module: com.udacity.catpoint.image
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/service/SecurityService.java:[1,1] package exists in another module: com.udacity.catpoint.image
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/DisplayPanel.java:[4,36] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/DisplayPanel.java:[5,36] cannot find symbol
+[ERROR]   symbol:   class StyleService
+[ERROR]   location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/DisplayPanel.java:[6,22] package net.miginfocom.swing is not visible
+[ERROR]   (package net.miginfocom.swing is declared in the unnamed module, but module com.udacity.catpoint.security does not read it)
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/DisplayPanel.java:[18,25] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: class com.udacity.catpoint.application.DisplayPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[5,36] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[6,36] cannot find symbol
+[ERROR]   symbol:   class StyleService
+[ERROR]   location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[7,22] package net.miginfocom.swing is not visible
+[ERROR]   (package net.miginfocom.swing is declared in the unnamed module, but module com.udacity.catpoint.security does not read it)
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[17,13] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: class com.udacity.catpoint.application.SensorPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[29,24] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: class com.udacity.catpoint.application.SensorPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/CatpointGui.java:[6,36] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/CatpointGui.java:[7,22] package net.miginfocom.swing is not visible
+[ERROR]   (package net.miginfocom.swing is declared in the unnamed module, but module com.udacity.catpoint.security does not read it)
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/CatpointGui.java:[20,13] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: class com.udacity.catpoint.application.CatpointGui
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[4,36] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[5,36] cannot find symbol
+[ERROR]   symbol:   class StyleService
+[ERROR]   location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[6,22] package net.miginfocom.swing is not visible
+[ERROR]   (package net.miginfocom.swing is declared in the unnamed module, but module com.udacity.catpoint.security does not read it)
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[4,36] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[5,36] cannot find symbol
+[ERROR]   symbol:   class StyleService
+[ERROR]   location: package com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[6,22] package net.miginfocom.swing is not visible
+[ERROR]   (package net.miginfocom.swing is declared in the unnamed module, but module com.udacity.catpoint.security does not read it)
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[19,13] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: class com.udacity.catpoint.application.ImagePanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[28,23] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: class com.udacity.catpoint.application.ImagePanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[18,13] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: class com.udacity.catpoint.application.ControlPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[22,25] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: class com.udacity.catpoint.application.ControlPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/service/SecurityService.java:[22,13] cannot find symbol
+[ERROR]   symbol:   class FakeImageService
+[ERROR]   location: class com.udacity.catpoint.security.service.SecurityService
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/service/SecurityService.java:[26,67] cannot find symbol
+[ERROR]   symbol:   class FakeImageService
+[ERROR]   location: class com.udacity.catpoint.security.service.SecurityService
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/module-info.java:[11,42] package is empty or does not exist: com.udacity.catpoint.security.service
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/module-info.java:[12,42] package is empty or does not exist: com.udacity.catpoint.security.application
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/module-info.java:[13,42] package is empty or does not exist: com.udacity.catpoint.security.data
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/DisplayPanel.java:[28,28] cannot find symbol
+[ERROR]   symbol:   variable StyleService
+[ERROR]   location: class com.udacity.catpoint.application.DisplayPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/SensorPanel.java:[34,28] cannot find symbol
+[ERROR]   symbol:   variable StyleService
+[ERROR]   location: class com.udacity.catpoint.application.SensorPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/CatpointGui.java:[20,51] cannot find symbol
+[ERROR]   symbol:   class SecurityService
+[ERROR]   location: class com.udacity.catpoint.application.CatpointGui
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ControlPanel.java:[28,28] cannot find symbol
+[ERROR]   symbol:   variable StyleService
+[ERROR]   location: class com.udacity.catpoint.application.ControlPanel
+[ERROR] /workspaces/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/Security-Service/src/main/java/com/udacity/catpoint/security/application/ImagePanel.java:[35,30] cannot find symbol
+[ERROR]   symbol:   variable StyleService
+[ERROR]   location: class com.udacity.catpoint.application.ImagePanel
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the '-e' switch
+[ERROR] Re-run Maven using the '-X' switch to enable verbose output
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/CompilationFailureException
